@@ -23,7 +23,6 @@ class DesertOptions extends Component {
     formSubmit(event) {
         event.preventDefault();
         desertOrderArray.push(this.state.flavor)
-        console.log(desertOrderArray)
     }
     render() {
         return (
@@ -48,7 +47,6 @@ class DesertOptions extends Component {
                                         />
                                         Vanilla
                                     </label>
-                                    {/* <li className='center'><button type='radio'>1 scoop vanilla</button></li> */}
                                 </div>
                                 <br />
 
@@ -62,7 +60,6 @@ class DesertOptions extends Component {
                                         />
                                         chocolate
                                     </label>
-                                    {/* <li className='center'><button type='radio'>1 scoop chocolate</button></li> */}
                                 </div>
                                 <br />
 
@@ -76,7 +73,6 @@ class DesertOptions extends Component {
                                         />
                                         strawberry
                                     </label>
-                                    {/* <li className='center'><button type='radio'>1 scoop strawberry</button></li>*/}
                                 </div>
                                 <br />
                             </ul>
@@ -90,17 +86,8 @@ class DesertOptions extends Component {
                         </a>
                     </form>
                 </div>
-
-
-
             </div>
-
         )
     }
 }
-
 export default DesertOptions;
-
-function placeOrder() {
-
-}

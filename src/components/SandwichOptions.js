@@ -42,40 +42,13 @@ class SandwichOptions extends Component {
         sandwichOrderArray.push(this.state.fries);
         sandwichOrderArray.push(this.state.soup);
         sandwichOrderArray.push(this.state.size);
-        console.log(sandwichOrderArray);
     }
 
-  
 
-    // handleChange(event) {
-    //     // ===== prevents the webpage from restarting everytime you click
-    //     event.preventDefault();
-    //     // ===== gets the event aka click button and sends in a value declared at that time
-    //     const { name, value } = event.target; // i dont know why name is there but it didnt work without it
-    //     // ===== appeneds new value in to array
-    //     this.setState({ [name]: value === "smallFries"  ? "smallFries" : ""});
-
-    //     console.log("thingngny", this.state.option = value);
-
-    // }
-
-    //     <label>
-    //     <input
-    //         className='center'
-    //         type="radio"
-    //         name="size"
-    //         value="smallFries"
-    //         checked={this.state.sandwichOderArray === "smallFries"}
-    //         onChange={this.handleChange}
-    //     />{" "}
-    //     Small Fries
-    // </label>
 
     render() {
         return (
             <div className='optionsBody'>
-                {/* an and opperatior vvvv*/} 
-                {/* {this.state.tempval && <span>{this.state.tempval}</span>} */}
                 <span className='sideBarRight'></span>
                 <span className='sideBarLeft'></span>
                 <div className='NavBar'>
@@ -99,7 +72,6 @@ class SandwichOptions extends Component {
                                             />
                                             Small Fries
                                         </label>
-                                        {/* <li className='center'><button type='radio'>Small Fries</button></li> */}
                                     </div>
                                     <br />
                                     {/* med */}
@@ -109,12 +81,10 @@ class SandwichOptions extends Component {
                                                 type="radio"
                                                 name='form1'
                                                 value="MediumFries"
-                                                // checked={this.state.fries === "MediumFries"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Medium Fries
                                         </label>
-                                        {/* <li className='center'><button type='radio'>Medium Fries</button></li> */}
                                     </div>
                                     <br />
                                     {/* large */}
@@ -124,12 +94,10 @@ class SandwichOptions extends Component {
                                                 type="radio"
                                                 name='form1'
                                                 value="LargeFries"
-                                                // checked={this.state.fries === "LargeFries"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Large Fries
                                         </label>
-                                        {/* <li className='center'><button type='radio'>Large Fries</button></li>*/}
                                     </div>
                                     <br />
                                     {/* small chilli */}
@@ -139,12 +107,10 @@ class SandwichOptions extends Component {
                                                 type="radio"
                                                 name='form1'
                                                 value="SmallChilliCheeseFry"
-                                                // checked={this.state.fries === "SmallChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Small Chilli Cheese Fry
                                         </label>
-                                        {/* <li className='center'><button type='radio'>Small Chilli Cheese Fry</button></li>*/}
                                     </div>
                                     <br />
                                     {/* Med Chilli */}
@@ -154,12 +120,10 @@ class SandwichOptions extends Component {
                                                 type="radio"
                                                 name='form1'
                                                 value="MediumChilliCheeseFry"
-                                                // checked={this.state.fries === "MediumChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Medium Chilli Cheese Fry
                                         </label>
-                                        {/*<li className='center'><button type='radio'>Medium Chilli Cheese Fry</button></li>*/}
                                     </div>
                                     <br />
                                     {/* Large chilli */}
@@ -169,12 +133,10 @@ class SandwichOptions extends Component {
                                                 type="radio"
                                                 name='form1'
                                                 value="LargeChilliCheeseFry"
-                                                // checked={this.state.fries === "LargeChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Large Chilli Cheese Fry
                                         </label>
-                                        {/*<li className='center'><button type='radio'>Large Chilli Cheese Fry</button></li>*/}
                                     </div>
                                     <br />
                                 </ul>
@@ -193,12 +155,10 @@ class SandwichOptions extends Component {
                                                     type="radio"
                                                     name='form2'
                                                     value="TomatoeSoup"
-                                                    // checked={this.state.selectedOption === "TomatoeSoup"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Tomatoe Soup
                                             </label>
-                                            {/* <li className='center'><button type='radio'>Tomatoe Soup</button></li> */}
                                         </div>
                                         <br />
 
@@ -209,12 +169,10 @@ class SandwichOptions extends Component {
                                                     type="radio"
                                                     name='form2'
                                                     value="ChickenGnochi"
-                                                    // checked={this.state.selectedOption === "ChickenGnochi"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Chicken Gnochi
                                             </label>
-                                            {/* <li className='center'><button type='radio'>Chicken Gnochi</button></li> */}
                                         </div>
                                         <br />
 
@@ -225,12 +183,10 @@ class SandwichOptions extends Component {
                                                     type="radio"
                                                     name='form2'
                                                     value="BeefStew"
-                                                    // checked={this.state.selectedOption === "BeefStew"}
                                                     onChange={this.onValueChange}
                                                 />
                                                 Beef Stew
                                             </label>
-                                            {/* <li className='center'><button type='radio'>Beef Stew</button></li> */}
                                         </div>
                                         <br />
 
@@ -241,12 +197,10 @@ class SandwichOptions extends Component {
                                                     type="radio"
                                                     name='form2'
                                                     value="SoupOftheDay"
-                                                    // checked={this.state.selectedOption === "SoupOftheDay"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Soup Of the Day
                                             </label>
-                                            {/* <li className='center'><button type='radio'>Soup Of the Day</button></li> */}
                                         </div>
                                         <br />
                                     </ul>
@@ -263,12 +217,10 @@ class SandwichOptions extends Component {
                                                         type="radio"
                                                         name='form3'
                                                         value="HalfBowl"
-                                                        // checked={this.state.selectedOption === "HalfBowl"}
                                                         onChange={this.onSizeChange}
                                                     />
                                                     Half Bowl
                                                 </label>
-                                                {/* <li className='center'><button type='radio'>Half Bowl</button></li> */}
                                             </div>
                                             <br />
                                             {/* SotD */}
@@ -278,21 +230,17 @@ class SandwichOptions extends Component {
                                                         type="radio"
                                                         name='form3'
                                                         value="FullBowl"
-                                                        // checked={this.state.selectedOption === "FullBowl"}
                                                         onChange={this.onSizeChange}
                                                     />
                                                     Full Bowl
                                                 </label>
-                                                {/* <li className='center'><button type='radio'>Full Bowl</button></li> */}
                                             </div>
                                         </ul>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        {/* <a href='http://localhost:3000/MainMenu' className='buttonClass'>
-                            <button type='submit'>Place Your Order!</button>
-                        </a> */}
+                     
                         <button onClick={this.formSubmit}>add to cart</button>
                         <a href='/MainMenu' className='buttonClass'>
                             <button type='submit'>Order More!</button>
